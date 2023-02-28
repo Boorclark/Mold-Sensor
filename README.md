@@ -29,11 +29,11 @@ Soil Moisture Monitor:
 
 ## Files
 
-Data Folder: empty for now, but this directory will contain the files that contain the data,
-Images Folder: contains an example image,
-License: contains the licensing and copyright rules and regulations,
-README.md: contains detailed information on the project, and the milestone regulations,
-example-README.md: this file has the instructions on how the actual README.md should be formatted
+* Data Folder: empty for now, but this directory will contain the files that contain the data,
+* Images Folder: contains an example image
+* License: contains the licensing and copyright rules and regulations
+* README.md: contains detailed information on the project, and the milestone regulations,
+* example-README.md: this file has the instructions on how the actual README.md should be formatted
 
 ### Project Files
 
@@ -46,8 +46,9 @@ example-README.md: this file has the instructions on how the actual README.md sh
 ## Errors and Constraints
 
 ## References
-https://www.piedmont.org/living-better/health-benefits-of-indoor-plants : we used this source to learn more about the benefits of keeping plants indoors as part of our planning stage. 
-https://iotdesignpro.com/projects/iot-based-soil-moisture-monitoring-system-using-esp32 : example of how someone else created their soil moisture monitor that includes instructions on how to make our own with circuit diagram, video instructions, etc. 
+
+* https://www.piedmont.org/living-better/health-benefits-of-indoor-plants : we used this source to learn more about the benefits of keeping plants indoors as part of our planning stage. 
+* https://iotdesignpro.com/projects/iot-based-soil-moisture-monitoring-system-using-esp32 : example of how someone else created their soil moisture monitor that includes instructions on how to make our own with circuit diagram, video instructions, etc. 
 
 ## Summary and Reflection
 
