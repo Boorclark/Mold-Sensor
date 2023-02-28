@@ -18,8 +18,8 @@ In no more than one paragraph, describe the problem your product will solve, and
 
 ### Hardware Design
 Soil Moisture Monitor: 
-*Soil moisture sensor
-*OLED screen
+* Soil moisture sensor
+* OLED screen
 * Raspberry Pi
 
 **NOTE**: 
