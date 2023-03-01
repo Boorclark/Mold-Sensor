@@ -7,22 +7,25 @@
 
 ---
 ## Purpose
-*You'll complete this section as part of Milestone 1.*
 
-Soil Moisture Monitor: The purpose of our project is to contribute to living sustainably by creating an embedded system that solves an environmental issue. There are numerous benefits that link to having plants indoors such as an improvement in air quality, reducing stress, improve environmental wellness, etc. House plants are living things, and they require care just like any other living things. It is important to provide the proper care to plants for them to flourish in their environment. As humans, we must make sure that they are receiving an adequate amount of sunlight, water, prune and cut away their leaves, stems, and branches so that they are healthy. Taking care of plants can be tricky at times as some plants require more/less water based on their soil moisture. We will create an embedded system that tracks the soil moisture of the plant, so that we know about how much water should be given. 
+**Soil Moisture Monitor**: The purpose of our project is to contribute to living sustainably by creating an embedded system that solves an environmental issue. There are numerous benefits that link to having plants indoors such as an improvement in air quality, reducing stress, improve environmental wellness, etc. House plants are living things, and they require care just like any other living things. It is important to provide the proper care to plants for them to flourish in their environment. As humans, we must make sure that they are receiving an adequate amount of sunlight, water, prune and cut away their leaves, stems, and branches so that they are healthy. Taking care of plants can be tricky at times as some plants require more/less water based on their soil moisture. We will create an embedded system that tracks the soil moisture of the plant, so that we know about how much water should be given. 
+
+**Air Quality/Humidity Sensor for Mold**: The Air Quality/Humidity Sensor for Mold is an innovative and accessible solution that provides multiple benefits to Berea College's campus community. By promoting environmental sustainability and detecting mold growth, the sensor helps to prevent the need for harsh chemicals and other remediation methods, reducing the harm done to the environment. Additionally, it helps to maintain the health and well-being of the campus community by detecting the presence of mold, a common health hazard that can cause respiratory problems and allergic reactions. 
 
 In no more than one paragraph, describe the problem your product will solve, and how.
 
 ## Initial Design Plan
-*You'll complete this section as part of Milestone 1, and update regularly.*
 
 ### Hardware Design
-Soil Moisture Monitor: 
+**Soil Moisture Monitor**: 
 * Soil moisture sensor
 * OLED screen
 * Raspberry Pi
 
-**NOTE**: 
+**Air Quality/Humidity Sensor for Mold**:
+* SDS011 Sensor
+* DHT22 Sensor
+* Raspberry Pi
 
 ### Software Design
 
