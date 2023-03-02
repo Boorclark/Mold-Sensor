@@ -27,7 +27,7 @@ Gas leaks can be extremely dangerous because they can lead to explosions, fires,
 * DHT22 Sensor
 * Raspberry Pi
 
-**Gas Lead Detector**:
+**Gas Leak Detector**:
 * Raspberry Pi
 * MQ2 Gas Sensor Module
 * SG90 Servo motor
