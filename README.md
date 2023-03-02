@@ -12,6 +12,9 @@
 
 **Air Quality/Humidity Sensor for Mold**: The Air Quality/Humidity Sensor for Mold is an innovative and accessible solution that provides multiple benefits to Berea College's campus community. By promoting environmental sustainability and detecting mold growth, the sensor helps to prevent the need for harsh chemicals and other remediation methods, reducing the harm done to the environment. Additionally, it helps to maintain the health and well-being of the campus community by detecting the presence of mold, a common health hazard that can cause respiratory problems and allergic reactions. 
 
+**Gas Leak Detector** :  Gas leak detectors are important because they can help protect people from the harmful effects of gas leaks. Gas leaks can occur in homes, businesses, and other buildings, and can be caused by a variety of factors such as faulty appliances, damaged gas lines, or improper ventilation.
+Gas leaks can be extremely dangerous because they can lead to explosions, fires, or poisoning from inhaling toxic gases. These risks can be especially dangerous because gas leaks are often odorless and invisible, making it difficult to detect them without the help of specialized equipment. We want to take preventive meausres by creating an embedded systems that can alert people if there is gas leak.
+
 In no more than one paragraph, describe the problem your product will solve, and how.
 
 ## Initial Design Plan
@@ -27,6 +30,15 @@ In no more than one paragraph, describe the problem your product will solve, and
 * DHT22 Sensor
 * Raspberry Pi
 
+**Gas Lead Detector**:
+* Raspberry Pi
+* MQ2 Gas Sensor Module
+* SG90 Servo motor
+* Buzzer (5V)
+* LED with current limiting resistor (any value between 220 ohm and 1k ohm)
+* Bread Board
+* Jumper wires
+* 
 ### Software Design
 
 ### Data Design
@@ -53,6 +65,7 @@ In no more than one paragraph, describe the problem your product will solve, and
 
 * https://www.piedmont.org/living-better/health-benefits-of-indoor-plants : we used this source to learn more about the benefits of keeping plants indoors as part of our planning stage. 
 * https://iotdesignpro.com/projects/iot-based-soil-moisture-monitoring-system-using-esp32 : example of how someone else created their soil moisture monitor that includes instructions on how to make our own with circuit diagram, video instructions, etc. 
+* https://quartzcomponents.com/blogs/electronics-projects/lpg-gas-leakage-detector-using-mq2-sensor-and-controller-using-sg90-servo-and-arduino : we used this to learn more about how we can create a gas leak detector. 
 
 ## Summary and Reflection
 
