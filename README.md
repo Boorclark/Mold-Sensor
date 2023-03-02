@@ -1,5 +1,4 @@
-# P02: Project 2
-*Give your project a name and replace the above text with that name.*
+# P02: Project 2 Undecided (Soil Moisture Monitor | Air Quality/Humidity Sensor for Mold | Gas Leak Detector)
 
 **Author(s)**: __*Garrett Clark, Silas Fair, Madinabonu Solijonova*__
 
@@ -14,8 +13,6 @@
 
 **Gas Leak Detector** :  Gas leak detectors are important because they can help protect people from the harmful effects of gas leaks. Gas leaks can occur in homes, businesses, and other buildings, and can be caused by a variety of factors such as faulty appliances, damaged gas lines, or improper ventilation.
 Gas leaks can be extremely dangerous because they can lead to explosions, fires, or poisoning from inhaling toxic gases. These risks can be especially dangerous because gas leaks are often odorless and invisible, making it difficult to detect them without the help of specialized equipment. We want to take preventive meausres by creating an embedded systems that can alert people if there is gas leak.
-
-In no more than one paragraph, describe the problem your product will solve, and how.
 
 ## Initial Design Plan
 
@@ -38,7 +35,7 @@ In no more than one paragraph, describe the problem your product will solve, and
 * LED with current limiting resistor (any value between 220 ohm and 1k ohm)
 * Bread Board
 * Jumper wires
-* 
+
 ### Software Design
 
 ### Data Design
