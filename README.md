@@ -20,6 +20,9 @@
 
 ### Data Design
 
+### Diagram Images
+![DHT22 Sensor](images\DHT22.jpg)
+![SD011 Sensor](images\sds011.jpg)
 ## Files
 
 * Data Folder: empty for now, but this directory will contain the files that contain the data,
