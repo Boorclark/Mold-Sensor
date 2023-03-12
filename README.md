@@ -1,4 +1,4 @@
-# P02: Project 2 Undecided (Soil Moisture Monitor | Air Quality/Humidity Sensor for Mold | Gas Leak Detector)
+# P02: Air Quality/Humidity Sensor for Mold
 
 **Author(s)**: __*Garrett Clark, Silas Fair, Madinabonu Solijonova*__
 
@@ -21,8 +21,9 @@
 ### Data Design
 
 ### Diagram Images
-![DHT22 Sensor](images\DHT22.jpg)
-![SD011 Sensor](images\sds011.jpg)
+![DHT22 Sensor](https://github.com/CSC300-Embedded-Systems/p02-project-2-silas-madina-garrett/blob/299e4b322f7ee57cb1add314cebee5af348ec9cc/images/DHT22.jpg)
+![SD011 Sensor](https://github.com/CSC300-Embedded-Systems/p02-project-2-silas-madina-garrett/blob/299e4b322f7ee57cb1add314cebee5af348ec9cc/images/sds011.jpg)
+
 ## Files
 
 * Data Folder: empty for now, but this directory will contain the files that contain the data,
