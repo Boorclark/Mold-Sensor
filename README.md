@@ -43,9 +43,8 @@
 ## Errors and Constraints
 
 ## References
-https://www.tomshardware.com/how-to/raspberry-pi-air-quality-monitor
+* https://www.tomshardware.com/how-to/raspberry-pi-air-quality-monitor
 Shows how to set up an air quality monitor and graph over time
-
 * https://www.piedmont.org/living-better/health-benefits-of-indoor-plants : we used this source to learn more about the benefits of keeping plants indoors as part of our planning stage. 
 * https://iotdesignpro.com/projects/iot-based-soil-moisture-monitoring-system-using-esp32 : example of how someone else created their soil moisture monitor that includes instructions on how to make our own with circuit diagram, video instructions, etc. 
 * https://quartzcomponents.com/blogs/electronics-projects/lpg-gas-leakage-detector-using-mq2-sensor-and-controller-using-sg90-servo-and-arduino : we used this to learn more about how we can create a gas leak detector. 
