@@ -19,6 +19,11 @@ class MoldSensor:
                 data_writer = csv.writer(data_file)
                 if os.stat(self.filename).st_size == 0:
                     data_writer.writerow(["Time", "Temperature", "Humidity", "Air Quality"])
-        
+                print([current_time, "Temp={0:0.1f}*C  Humidity={1:0.1f}%".format(temperature, humidity)])
                 data_writer.writerow([current_time, "Temp={0:0.1f}*C  Humidity={1:0.1f}%".format(temperature, humidity)])
             time.sleep(30)
+            
+
+if __name__ == "__main__":
+    ms = MoldSensor()
+    ms.start()
