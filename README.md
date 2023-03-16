@@ -6,7 +6,9 @@
 
 ---
 ## Purpose
-**Air Quality/Humidity Sensor for Mold**: The Air Quality/Humidity Sensor for Mold is an innovative and accessible solution that provides multiple benefits to Berea College's campus community. By promoting environmental sustainability and detecting mold growth, the sensor helps to prevent the need for harsh chemicals and other remediation methods, reducing the harm done to the environment. Additionally, it helps to maintain the health and well-being of the campus community by detecting the presence of mold, a common health hazard that can cause respiratory problems and allergic reactions. 
+**Air Quality/Humidity Sensor for Mold**: 
+Instead of detecting mold directly, we will use humidity and temperature sensors to monitor and check for conditions which may lead to mold growth. To prevent this from happenning, we will use a temperature and humidity sensor to mold conducive the sensor helps to prevent the need for harsh chemicals and other remediation methods, reducing the harm done to the environment. Additionally, it helps to maintain the health and well-being of the campus community by detecting the presence of mold, a common health hazard that can cause respiratory problems and allergic reactions. 
+
 
 ## Initial Design Plan
 
@@ -21,6 +23,8 @@
 ### Data Design
 
 ### Diagram Images
+![image](https://user-images.githubusercontent.com/78548914/225525834-5234650c-5460-46fa-8c59-4e19b2b9ffd8.png)
+
 ![DHT22 Sensor](https://github.com/CSC300-Embedded-Systems/p02-project-2-silas-madina-garrett/blob/299e4b322f7ee57cb1add314cebee5af348ec9cc/images/DHT22.jpg)
 ![SD011 Sensor](https://github.com/CSC300-Embedded-Systems/p02-project-2-silas-madina-garrett/blob/299e4b322f7ee57cb1add314cebee5af348ec9cc/images/sds011.jpg)
 
