@@ -1,7 +1,6 @@
 import os
 import time
 import csv
-import time
 import Adafruit_DHT
 
 class MoldSensor:
@@ -21,8 +20,5 @@ class MoldSensor:
                 if os.stat(self.filename).st_size == 0:
                     data_writer.writerow(["Time", "Temperature", "Humidity", "Air Quality"])
         
-            data_writer.writerow(current_time, "Temp={0:0.1f}*C  Humidity={1:0.1f}%".format(temperature, humidity))
-        time.sleep(30)
-
-
-
+                data_writer.writerow([current_time, "Temp={0:0.1f}*C  Humidity={1:0.1f}%".format(temperature, humidity)])
+            time.sleep(30)
