@@ -46,6 +46,7 @@ The project promotes economic sustainability by reducing the cost associated wit
 * License: contains the licensing and copyright rules and regulations
 * README.md: contains detailed information on the project, and the milestone regulations,
 * example-README.md: this file has the instructions on how the actual README.md should be formatted
+* data.csv: Contains data collected overnight for milestone 3.
 
 ### Project Files
 
