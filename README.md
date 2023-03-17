@@ -7,11 +7,18 @@
 ---
 ## Purpose
 **Air Quality/Humidity Sensor for Mold**: 
-Instead of detecting mold directly, we will use humidity and temperature sensors to monitor and check for conditions which may lead to mold growth. To prevent this from happenning, we will use a temperature and humidity sensor to mold conducive the sensor helps to prevent the need for harsh chemicals and other remediation methods, reducing the harm done to the environment. Additionally, it helps to maintain the health and well-being of the campus community by detecting the presence of mold, a common health hazard that can cause respiratory problems and allergic reactions. 
-Environmental Sustainability: The use of the humidity and temperature sensors helps to promote environmental sustainability by preventing mold growth without the use of harsh chemicals. This method reduces the negative impact on the environment that is usually associated with mold remediation processes. Additionally, by detecting and monitoring conditions that lead to mold growth, the sensor helps to reduce the overall need for remediation and maintenance, which minimizes waste and energy consumption.
-Social Sustainability: The Air Quality/Humidity Sensor for Mold project promotes social sustainability by improving the health and well-being of the campus community. Mold growth is a common health hazard that can cause respiratory problems and allergic reactions. By detecting and preventing mold growth, the sensor helps to maintain a safe and healthy environment for the community. This promotes social sustainability by ensuring the health and well-being of individuals and the community as a whole.
-Economic Sustainability: The project promotes economic sustainability by reducing the cost associated with mold remediation and maintenance. The use of the humidity and temperature sensors helps to prevent the need for expensive remediation methods, which reduces the overall cost of maintenance. Additionally, by detecting and preventing mold growth, the project helps to minimize the potential financial and legal liabilities associated with mold-related health issues.
+This class project aims to develop an air quality monitoring system using a Raspberry Pi and two sensors, a dust sensor, and a humidity/temperature sensor. The Raspberry Pi will collect and analyze real-time data from the sensors, and the data will be displayed on a unit for users to monitor air quality. The dust sensor will detect particulate matter in the air, while the humidity/temperature sensor will measure the relative humidity and temperature of the air. This project has potential applications in various settings, such as dorms, workspaces, and other public spaces, where air quality monitoring is important for maintaining a healthy and comfortable environment.
 
+**Environmental Sustainability**: 
+The use of the humidity and temperature sensors helps to promote environmental sustainability by preventing mold growth without the use of harsh chemicals. This method reduces the negative impact on the environment that is usually associated with mold remediation processes. Additionally, by detecting and monitoring conditions that lead to mold growth, the sensor helps to reduce the overall need for remediation and maintenance, which minimizes waste and energy consumption.
+
+**Social Sustainability**: 
+The Air Quality/Humidity Sensor for Mold project promotes social sustainability by improving the health and well-being of the campus community. Mold growth is a common health hazard that can cause respiratory problems and allergic reactions. By detecting and preventing mold growth, the sensor helps to maintain a safe and healthy environment for the community. This promotes social sustainability by ensuring the health and well-being of individuals and the community as a whole.
+
+**Economic Sustainability**: 
+The project promotes economic sustainability by reducing the cost associated with mold remediation and maintenance. The use of the humidity and temperature sensors helps to prevent the need for expensive remediation methods, which reduces the overall cost of maintenance. Additionally, by detecting and preventing mold growth, the project helps to minimize the potential financial and legal liabilities associated with mold-related health issues.
+
+---
 
 ## Initial Design Plan
 
@@ -26,7 +33,6 @@ Economic Sustainability: The project promotes economic sustainability by reducin
 ### Data Design
 
 ### Diagram Images
-![image](https://user-images.githubusercontent.com/78548914/225525834-5234650c-5460-46fa-8c59-4e19b2b9ffd8.png)
 
 ![DHT22 Sensor](https://github.com/CSC300-Embedded-Systems/p02-project-2-silas-madina-garrett/blob/299e4b322f7ee57cb1add314cebee5af348ec9cc/images/DHT22.jpg)
 ![SD011 Sensor](https://github.com/CSC300-Embedded-Systems/p02-project-2-silas-madina-garrett/blob/299e4b322f7ee57cb1add314cebee5af348ec9cc/images/sds011.jpg)
