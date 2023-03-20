@@ -31,6 +31,7 @@ The project promotes economic sustainability by reducing the cost associated wit
 ### Software Design
 
 ### Data Design
+
 - Data Type: 
     -Time: the date is saved in the following format month/date/year
     -Temperature: the temperature is measured in Celsius 
@@ -38,7 +39,7 @@ The project promotes economic sustainability by reducing the cost associated wit
 -Frequency of the Data: 
     -the data is collected every 30 seconds
 
-image.png 
+![image](https://user-images.githubusercontent.com/97661971/226230326-53a2b3df-9595-466c-8ff9-7202d12c663a.png)
 ### Diagram Images
 
 ![DHT22 Sensor](https://github.com/CSC300-Embedded-Systems/p02-project-2-silas-madina-garrett/blob/299e4b322f7ee57cb1add314cebee5af348ec9cc/images/DHT22.jpg)
