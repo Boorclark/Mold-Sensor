@@ -69,6 +69,7 @@ start(self): Starts the Mold Sensor, continuously reading temperature and humidi
 
 ![DHT22 Sensor](https://github.com/CSC300-Embedded-Systems/p02-project-2-silas-madina-garrett/blob/299e4b322f7ee57cb1add314cebee5af348ec9cc/images/DHT22.jpg)
 ![SD011 Sensor](https://github.com/CSC300-Embedded-Systems/p02-project-2-silas-madina-garrett/blob/299e4b322f7ee57cb1add314cebee5af348ec9cc/images/sds011.jpg)
+![image](https://user-images.githubusercontent.com/97661971/226479600-67463cc4-c96d-43ab-b868-01494b819b9f.png)
 ![image](https://user-images.githubusercontent.com/97661971/225777106-18c18982-5ed1-4415-bb9f-da50b6717dad.png)
 ![image](https://user-images.githubusercontent.com/97661971/225777162-6f7f241d-e624-496d-91cf-e1115a9c1b09.png)
 
