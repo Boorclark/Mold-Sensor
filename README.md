@@ -31,7 +31,14 @@ The project promotes economic sustainability by reducing the cost associated wit
 ### Software Design
 
 ### Data Design
+- Data Type: 
+    -Time: the date is saved in the following format month/date/year
+    -Temperature: the temperature is measured in Celsius 
+    -Humidity: the humidity levels are measured in percentage 
+-Frequency of the Data: 
+    -the data is collected every 30 seconds
 
+image.png 
 ### Diagram Images
 
 ![DHT22 Sensor](https://github.com/CSC300-Embedded-Systems/p02-project-2-silas-madina-garrett/blob/299e4b322f7ee57cb1add314cebee5af348ec9cc/images/DHT22.jpg)
@@ -42,16 +49,17 @@ The project promotes economic sustainability by reducing the cost associated wit
 ## Files
 
 * Data Folder: empty for now, but this directory will contain the files that contain the data,
-* Images Folder: contains an example image
+* Images Folder: contains an example image, and diagrams for both sensors. 
 * License: contains the licensing and copyright rules and regulations
 * README.md: contains detailed information on the project, and the milestone regulations,
 * example-README.md: this file has the instructions on how the actual README.md should be formatted
 * data.csv: Contains data collected overnight for milestone 3.
+* main.py: a python file which includes the instructions for collecting the data. 
 
 ### Project Files
-
+* main.py: A python file that includes the code to collect the data. 
 ### Data Files
-
+* data.csv: Contains data collected overnight for milestone 3.
 ## Instructions
 
 ## Data Analysis
