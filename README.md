@@ -7,8 +7,18 @@
 ---
 ## Purpose
 **Air Quality/Humidity Sensor for Mold**: 
-Instead of detecting mold directly, we will use humidity and temperature sensors to monitor and check for conditions which may lead to mold growth. To prevent this from happenning, we will use a temperature and humidity sensor to mold conducive the sensor helps to prevent the need for harsh chemicals and other remediation methods, reducing the harm done to the environment. Additionally, it helps to maintain the health and well-being of the campus community by detecting the presence of mold, a common health hazard that can cause respiratory problems and allergic reactions. 
+This class project aims to develop an air quality monitoring system using a Raspberry Pi and two sensors, a dust sensor, and a humidity/temperature sensor. The Raspberry Pi will collect and analyze real-time data from the sensors, and the data will be displayed on a unit for users to monitor air quality. The dust sensor will detect particulate matter in the air, while the humidity/temperature sensor will measure the relative humidity and temperature of the air. This project has potential applications in various settings, such as dorms, workspaces, and other public spaces, where air quality monitoring is important for maintaining a healthy and comfortable environment.
 
+**Environmental Sustainability**: 
+The use of the humidity and temperature sensors helps to promote environmental sustainability by preventing mold growth without the use of harsh chemicals. This method reduces the negative impact on the environment that is usually associated with mold remediation processes. Additionally, by detecting and monitoring conditions that lead to mold growth, the sensor helps to reduce the overall need for remediation and maintenance, which minimizes waste and energy consumption.
+
+**Social Sustainability**: 
+The Air Quality/Humidity Sensor for Mold project promotes social sustainability by improving the health and well-being of the campus community. Mold growth is a common health hazard that can cause respiratory problems and allergic reactions. By detecting and preventing mold growth, the sensor helps to maintain a safe and healthy environment for the community. This promotes social sustainability by ensuring the health and well-being of individuals and the community as a whole.
+
+**Economic Sustainability**: 
+The project promotes economic sustainability by reducing the cost associated with mold remediation and maintenance. The use of the humidity and temperature sensors helps to prevent the need for expensive remediation methods, which reduces the overall cost of maintenance. Additionally, by detecting and preventing mold growth, the project helps to minimize the potential financial and legal liabilities associated with mold-related health issues.
+
+---
 
 ## Initial Design Plan
 
@@ -19,29 +29,64 @@ Instead of detecting mold directly, we will use humidity and temperature sensors
 * Raspberry Pi
 
 ### Software Design
+#### Class Name: MoldSensor
+
+**Responsibilities**:
+
+- Initialize Mold Sensor Rig by setting up the DHT sensor and pin, and the filename for the data file. Start the Mold Sensor, continuously reading temperature and humidity values from the DHT sensor and saving them to the data file every 30 seconds.
+
+**Collaborators**:
+
+- Adafruit_DHT: A library for interacting with DHT sensors.
+os: A library for interacting with the operating system.
+time: A library for working with time.
+csv: A library for working with CSV files.
+
+**Attributes**:
+
+- DHT_SENSOR: An Adafruit_DHT.DHT22 object representing the DHT sensor.
+DHT_PIN: An integer representing the pin the DHT sensor is connected to.
+filename: A string representing the filename of the data file.
+Methods:
+
+- init(self): Initializes the Mold Sensor Rig by setting up the DHT sensor and pin, and the filename for the data file.
+start(self): Starts the Mold Sensor, continuously reading temperature and humidity values from the DHT sensor and saving them to the data file every 30 seconds.
+
+**Methods**:
+- init(self): Initializes the Mold Sensor Rig by setting up the DHT sensor and pin, and the filename for the data file.
+start(self): Starts the Mold Sensor, continuously reading temperature and humidity values from the DHT sensor and saving them to the data file every 30 seconds.
 
 ### Data Design
+- Data Type: 
+  - Time: the date is saved in the following format month/date/year
+  - Temperature: the temperature is measured in Celsius 
+  - Humidity: the humidity levels are measured in percentage 
+- Frequency of the Data: 
+   - the data is collected every 30 seconds
 
+![image](https://user-images.githubusercontent.com/97661971/226230326-53a2b3df-9595-466c-8ff9-7202d12c663a.png)
 ### Diagram Images
-![image](https://user-images.githubusercontent.com/78548914/225525834-5234650c-5460-46fa-8c59-4e19b2b9ffd8.png)
 
 ![DHT22 Sensor](https://github.com/CSC300-Embedded-Systems/p02-project-2-silas-madina-garrett/blob/299e4b322f7ee57cb1add314cebee5af348ec9cc/images/DHT22.jpg)
 ![SD011 Sensor](https://github.com/CSC300-Embedded-Systems/p02-project-2-silas-madina-garrett/blob/299e4b322f7ee57cb1add314cebee5af348ec9cc/images/sds011.jpg)
+![image](https://user-images.githubusercontent.com/97661971/226479600-67463cc4-c96d-43ab-b868-01494b819b9f.png)
 ![image](https://user-images.githubusercontent.com/97661971/225777106-18c18982-5ed1-4415-bb9f-da50b6717dad.png)
 ![image](https://user-images.githubusercontent.com/97661971/225777162-6f7f241d-e624-496d-91cf-e1115a9c1b09.png)
 
 ## Files
 
 * Data Folder: empty for now, but this directory will contain the files that contain the data,
-* Images Folder: contains an example image
+* Images Folder: contains an example image, and diagrams for both sensors. 
 * License: contains the licensing and copyright rules and regulations
 * README.md: contains detailed information on the project, and the milestone regulations,
 * example-README.md: this file has the instructions on how the actual README.md should be formatted
+* data.csv: Contains data collected overnight for milestone 3.
+* main.py: a python file which includes the instructions for collecting the data. 
 
 ### Project Files
-
+* main.py: A python file that includes the code to collect the data. 
 ### Data Files
-
+* data.csv: Contains data collected overnight for milestone 3.
 ## Instructions
 
 ## Data Analysis
