@@ -31,12 +31,12 @@ The project promotes economic sustainability by reducing the cost associated wit
 ### Software Design
 
 ### Data Design
--Data Type: 
-  -Time: the date is saved in the following format month/date/year
-  -Temperature: the temperature is measured in Celsius 
-  -Humidity: the humidity levels are measured in percentage 
--Frequency of the Data: 
-   -the data is collected every 30 seconds
+- Data Type: 
+  - Time: the date is saved in the following format month/date/year
+  - Temperature: the temperature is measured in Celsius 
+  - Humidity: the humidity levels are measured in percentage 
+- Frequency of the Data: 
+   - the data is collected every 30 seconds
 
 ![image](https://user-images.githubusercontent.com/97661971/226230326-53a2b3df-9595-466c-8ff9-7202d12c663a.png)
 ### Diagram Images
