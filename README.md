@@ -29,6 +29,32 @@ The project promotes economic sustainability by reducing the cost associated wit
 * Raspberry Pi
 
 ### Software Design
+#### Class Name: MoldSensor
+
+**Responsibilities**:
+
+- Initialize Mold Sensor Rig by setting up the DHT sensor and pin, and the filename for the data file. Start the Mold Sensor, continuously reading temperature and humidity values from the DHT sensor and saving them to the data file every 30 seconds.
+
+**Collaborators**:
+
+- Adafruit_DHT: A library for interacting with DHT sensors.
+os: A library for interacting with the operating system.
+time: A library for working with time.
+csv: A library for working with CSV files.
+
+**Attributes**:
+
+- DHT_SENSOR: An Adafruit_DHT.DHT22 object representing the DHT sensor.
+DHT_PIN: An integer representing the pin the DHT sensor is connected to.
+filename: A string representing the filename of the data file.
+Methods:
+
+- init(self): Initializes the Mold Sensor Rig by setting up the DHT sensor and pin, and the filename for the data file.
+start(self): Starts the Mold Sensor, continuously reading temperature and humidity values from the DHT sensor and saving them to the data file every 30 seconds.
+
+**Methods**:
+- init(self): Initializes the Mold Sensor Rig by setting up the DHT sensor and pin, and the filename for the data file.
+start(self): Starts the Mold Sensor, continuously reading temperature and humidity values from the DHT sensor and saving them to the data file every 30 seconds.
 
 ### Data Design
 - Data Type: 
