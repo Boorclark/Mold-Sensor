@@ -61,11 +61,18 @@ image.png
 ### Data Files
 * data.csv: Contains data collected overnight for milestone 3.
 ## Instructions
-
+1. Turn on
+2. Place the embedded system in the desired location, data will start collecting every 10 seconds as soon as it is turned on
+3. Depending how long you would like to collect data, remove the embedded system once enough data been collected
+4. To access the data, remove the memory card and insert it in a computer
+5. Locate an excel file called 'data.csv' 
+6. Now, you have access to the data that the embedded system has collected over the period of time.
+7. Interpret data
 ## Data Analysis
 
 ## Errors and Constraints
-
+* the sensors are not very accurate 
+* does not directly detect mold
 ## References
 * https://www.tomshardware.com/how-to/raspberry-pi-air-quality-monitor
 Shows how to set up an air quality monitor and graph over time
@@ -73,6 +80,7 @@ Shows how to set up an air quality monitor and graph over time
 * https://iotdesignpro.com/projects/iot-based-soil-moisture-monitoring-system-using-esp32 : example of how someone else created their soil moisture monitor that includes instructions on how to make our own with circuit diagram, video instructions, etc. 
 * https://quartzcomponents.com/blogs/electronics-projects/lpg-gas-leakage-detector-using-mq2-sensor-and-controller-using-sg90-servo-and-arduino : we used this to learn more about how we can create a gas leak detector. 
 * https://pimylifeup.com/raspberry-pi-humidity-sensor-dht22/ : This is a base template for the humidity sensor.
+* ChatGPT
 
 ## Summary and Reflection
 
