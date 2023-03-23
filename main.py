@@ -16,6 +16,9 @@ class MoldSensor:
         self.adc = Adafruit_ADS1x15.ADS1115()
         self.filename = "data.csv"
        
+        self.maxValADC = 32767.0 # Max val obtained from a 16-bit ADC
+        self.maxVolRange = 4.096 # Max voltage range from a ADC
+
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(self.DUST_PIN, GPIO.IN)
 
@@ -31,8 +34,8 @@ class MoldSensor:
         while True:
             humidity, temperature = Adafruit_DHT.read_retry(self.DHT_SENSOR, self.DHT_PIN)
 
-            voltage = self.adc.read_adc(self.ADC_PIN, gain=self.GAIN) / 32767.0 * 4.096  # Convert the raw ADC reading to voltage
-            airQuality = 170 * voltage - 0.1   # Convert the voltage to particulate matter concentration in μg/m³ (based on PMS5003 datasheet)
+            voltage = self.adc.read_adc(self.ADC_PIN, gain=self.GAIN) / self.maxValADC * self.maxVolRange  # Convert the raw ADC reading to voltage
+            airQuality = 170 * voltage - 0.1   # Convert the voltage to particulate matter concentration in μg/m³ 
 
             with open(file_name, mode='a+', newline='') as data_file:
                 data_writer = csv.writer(data_file)
