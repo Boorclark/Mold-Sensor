@@ -42,8 +42,8 @@ class MoldSensor:
                 # Write header row only if the file is newly created
                 if data_file.tell() == 0:
                     data_writer.writerow(["Time", "Temperature(c)", "Humidity(%)", "Air Quality(μg/m3)"])
-                print(['{0}'.format(current_time), 'Temp={0:0.1f}*C'.format(temperature), 'Humidity={0:0.1f}%'.format(humidity*3), 'Air Quality= {0}μg/m3'.format(airQuality)])
-                data_writer.writerow(['{0}'.format(current_time), '{0:0.1f}'.format(temperature), '{0:0.1f}'.format(humidity*3), '{0}'.format(airQuality)])
+                print(['{0}'.format(current_time), 'Temp={0:0.1f}*C'.format(temperature), 'Humidity={0:0.1f}%'.format(humidity), 'Air Quality= {0}μg/m3'.format(airQuality)])
+                data_writer.writerow(['{0}'.format(current_time), '{0:0.1f}'.format(temperature), '{0:0.1f}'.format(humidity), '{0}'.format(airQuality)])
             time.sleep(5)
 
 
