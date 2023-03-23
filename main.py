@@ -38,6 +38,9 @@ class MoldSensor:
         file_name = "Data/data_{}.csv".format(current_time)
 
         while True:
+            # Update the current time
+            current_time = time.strftime("%m-%d-%Y_%H:%M:%S", time.localtime())
+            
             # Read temperature and humidity from DHT sensor
             humidity, temperature = Adafruit_DHT.read_retry(self.DHT_SENSOR, self.DHT_PIN)
 
