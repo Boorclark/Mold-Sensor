@@ -68,7 +68,6 @@ start(self): Starts the Mold Sensor, continuously reading temperature and humidi
 ### Diagram Images
 
 ![DHT22 Sensor](https://github.com/CSC300-Embedded-Systems/p02-project-2-silas-madina-garrett/blob/299e4b322f7ee57cb1add314cebee5af348ec9cc/images/DHT22.jpg)
-![SD011 Sensor](https://github.com/CSC300-Embedded-Systems/p02-project-2-silas-madina-garrett/blob/299e4b322f7ee57cb1add314cebee5af348ec9cc/images/sds011.jpg)
 ![image](https://user-images.githubusercontent.com/97661971/226479600-67463cc4-c96d-43ab-b868-01494b819b9f.png)
 ![image](https://user-images.githubusercontent.com/97661971/225777106-18c18982-5ed1-4415-bb9f-da50b6717dad.png)
 ![image](https://user-images.githubusercontent.com/97661971/225777162-6f7f241d-e624-496d-91cf-e1115a9c1b09.png)
@@ -94,12 +93,12 @@ start(self): Starts the Mold Sensor, continuously reading temperature and humidi
 ## Errors and Constraints
 
 ## References
-* https://www.tomshardware.com/how-to/raspberry-pi-air-quality-monitor
-Shows how to set up an air quality monitor and graph over time
+* https://www.tomshardware.com/how-to/raspberry-pi-air-quality-monitor : Shows how to set up an air quality monitor and graph over time
 * https://www.piedmont.org/living-better/health-benefits-of-indoor-plants : we used this source to learn more about the benefits of keeping plants indoors as part of our planning stage. 
 * https://iotdesignpro.com/projects/iot-based-soil-moisture-monitoring-system-using-esp32 : example of how someone else created their soil moisture monitor that includes instructions on how to make our own with circuit diagram, video instructions, etc. 
 * https://quartzcomponents.com/blogs/electronics-projects/lpg-gas-leakage-detector-using-mq2-sensor-and-controller-using-sg90-servo-and-arduino : we used this to learn more about how we can create a gas leak detector. 
 * https://pimylifeup.com/raspberry-pi-humidity-sensor-dht22/ : This is a base template for the humidity sensor.
+* https://wiki.keyestudio.com/Ks0196_keyestudio_PM2.5_Shield : Code helped us understand the keyestudio sensor.
 
 ## Summary and Reflection
 
