@@ -24,37 +24,17 @@ The project promotes economic sustainability by reducing the cost associated wit
 
 ### Hardware Design
 **Air Quality/Humidity Sensor for Mold**:
-* SDS011 Sensor
+* KS0196 Sensor
 * DHT22 Sensor
 * Raspberry Pi
+* T-Cobbler
+* ADS1115
 
 ### Software Design
-#### Class Name: MoldSensor
-
-**Responsibilities**:
-
-- Initialize Mold Sensor Rig by setting up the DHT sensor and pin, and the filename for the data file. Start the Mold Sensor, continuously reading temperature and humidity values from the DHT sensor and saving them to the data file every 30 seconds.
-
-**Collaborators**:
-
-- Adafruit_DHT: A library for interacting with DHT sensors.
-os: A library for interacting with the operating system.
-time: A library for working with time.
-csv: A library for working with CSV files.
-
-**Attributes**:
-
-- DHT_SENSOR: An Adafruit_DHT.DHT22 object representing the DHT sensor.
-DHT_PIN: An integer representing the pin the DHT sensor is connected to.
-filename: A string representing the filename of the data file.
-Methods:
-
-- init(self): Initializes the Mold Sensor Rig by setting up the DHT sensor and pin, and the filename for the data file.
-start(self): Starts the Mold Sensor, continuously reading temperature and humidity values from the DHT sensor and saving them to the data file every 30 seconds.
-
-**Methods**:
-- init(self): Initializes the Mold Sensor Rig by setting up the DHT sensor and pin, and the filename for the data file.
-start(self): Starts the Mold Sensor, continuously reading temperature and humidity values from the DHT sensor and saving them to the data file every 30 seconds.
+#### Class Name: **MoldSensor**
+#### **Methods**:
+- init(self): Initializes the Mold Sensor Rig by setting the settings for the DHT sensor, dust sensor, ADC, and the files. 
+- start(self): Starts the Mold Sensor, continuously reading temperature and humidity values from the DHT sensor and saving them to the data file every 10 seconds.
 
 ### Data Design
 - Data Type: 
@@ -95,10 +75,10 @@ start(self): Starts the Mold Sensor, continuously reading temperature and humidi
 6. Now, you have access to the data that the embedded system has collected over the period of time.
 7. Interpret data
 ## Data Analysis
-The following data is from 7 hours inside a vent in [A berea dorm]
+The following data is from 7 hours inside a vent in Anna Smith Residence Hall
 
 * Average Humidity: 71.3% (Mold grows usually at above 70%)
-* Average Temperature: 18.2 Celsius (Spores require 10-16 Celsius)
+* Average Temperature: 18.2 Celsius (Mold usually requires 25-30°C)
 * Average Air Quality: 99.07 μg/m3 (Especially poor air quality is 150 μg/m3)
 
 ![image_720](https://user-images.githubusercontent.com/78548914/227698277-6f2ffdf5-6b34-43bc-9671-e6f454e2b445.png)
@@ -112,10 +92,9 @@ An air quality reading of 99.07 μg/m3 for particulate matter is considered mode
 
 "Mold grows best in warm, damp, and humid conditions, typically between 68°F and 86°F (20°C and 30°C)" (United States Environmental Protection Agency, https://www.epa.gov/mold/mold-cleanup-your-home)
 
-
 ## Errors and Constraints
-* the sensors are not very accurate 
-* does not directly detect mold
+* Callibration of sensors usually means that they are not exact measurements 
+* Detects the conditions in which mold should grow but does not directly detect the mold
 ## References
 * https://www.tomshardware.com/how-to/raspberry-pi-air-quality-monitor : Shows how to set up an air quality monitor and graph over time
 * https://www.piedmont.org/living-better/health-benefits-of-indoor-plants : we used this source to learn more about the benefits of keeping plants indoors as part of our planning stage. 
@@ -126,17 +105,17 @@ An air quality reading of 99.07 μg/m3 for particulate matter is considered mode
 * https://wiki.keyestudio.com/Ks0196_keyestudio_PM2.5_Shield : Code helped us understand the keyestudio sensor.
 * https://www.epa.gov/pm-pollution/particulate-matter-pm-basics : Shows the levels of air quality that are unhealthy, for μg/m3 of particulate matter.
 * https://www.epa.gov/sites/production/files/2014-05/documents/zones.pdf : Shows the EPA air quality ratings and what they mean.
-* https://www.cdc.gov/mold/faqs.htm) : Showed the conditions at which mold is most likely to form and cause air quality issues.
-* https://www.epa.gov/mold/mold-cleanup-your-home) : Also shows ideal mold growth conditions.
+* https://www.cdc.gov/mold/faqs.html : Showed the conditions at which mold is most likely to form and cause air quality issues.
+* https://www.epa.gov/mold/mold-cleanup-your-home : Also shows ideal mold growth conditions.
 
 ## Summary and Reflection
 The "Air Quality/Humidity Sensor for Mold" project aims to create a sustainable air quality monitoring system using a Raspberry Pi and two sensors, a dust sensor, and a humidity/temperature sensor. The project's objective is to improve the health and well-being of the campus community, prevent mold growth without the use of harsh chemicals, and reduce costs associated with mold remediation and maintenance.
 
-The initial design plan included hardware and software design, with the hardware design comprising of the SDS011 sensor, the DHT22 sensor, and the Raspberry Pi. The software design included a class named MoldSensor that continuously reads temperature and humidity values from the DHT sensor and saves them to the data file every 10 seconds.
+The initial design plan included hardware and software design, with the hardware design comprising of the KS0196 sensor, the DHT22 sensor, and the Raspberry Pi. The software design included a class named MoldSensor that continuously reads temperature and humidity values from the DHT sensor and saves them to the data file every 10 seconds.
 
 However, the team encountered issues getting the Wi-Fi to work on their Pi and had to reinstall drivers since they had no Wi-Fi. For some reason our drivers uninstalled or stopped working, but with the help of Proffessor Wilborne, Garrett was able to resolve the issue and set up the final sensor for sensing dust. The project's final data design includes time, temperature measured in Celsius, and humidity levels measured in percentage.
 
-The project's data analysis revealed that the average humidity was 71.3%, which is above the threshold for mold growth, and the average temperature was 18.2 Celsius, within the range of spores' requirements. The average air quality was 99.07 μg/m3, indicating poor air quality. Using a graph, you may also observe a clear corelation in the data collected from each sensor. So humidity, air quality, and temperature all go up and down at the same time in the data we collected.
+The project's data analysis revealed that the average humidity was 71.3%, which is above the threshold for mold growth, and the average temperature was 18.2 Celsius, within the range of spores' requirements, however, less than usual temperature required for mold growth. The average air quality was 99.07 μg/m3, indicating poor air quality. Using a graph, you may also observe a clear corelation in the data collected from each sensor. So humidity, air quality, and temperature all go up and down at the same time in the data we collected.
 
 I think, the project has significant potential to improve air quality and promote sustainability by detecting and preventing mold growth in an eco-friendly way. 
 
