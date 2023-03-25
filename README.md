@@ -121,21 +121,21 @@ I think, the project has significant potential to improve air quality and promot
 
 ## Final Self-Evaluations
 ### Ideation, Brainstorming, Design:
-*Garrett: 2*
-*Madina: 6*
-*Silas: 2*
+* *Garrett: 2*
+* *Madina: 6*
+* *Silas: 2*
 
 ### Code creation:
-*Garrett: 6*
-*Madina: 2*
-*Silas: 2*
+* *Garrett: 6*
+* *Madina: 2*
+* *Silas: 2*
 
 ### Documentation creation:
-*Garrett: 2*
-*Madina: 2*
-*Silas: 6*
+* *Garrett: 2*
+* *Madina: 2*
+* *Silas: 6*
 
 ### Teamwork & Participation:
-*Garrett: 3.33*
-*Madina: 3.33*
-*Silas: 3.33*
+* *Garrett: 3.33*
+* *Madina: 3.33*
+* *Silas: 3.33*
