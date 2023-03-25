@@ -130,6 +130,15 @@ An air quality reading of 99.07 μg/m3 for particulate matter is considered mode
 * https://www.epa.gov/mold/mold-cleanup-your-home) : Also shows ideal mold growth conditions.
 
 ## Summary and Reflection
+The "Air Quality/Humidity Sensor for Mold" project aims to create a sustainable air quality monitoring system using a Raspberry Pi and two sensors, a dust sensor, and a humidity/temperature sensor. The project's objective is to improve the health and well-being of the campus community, prevent mold growth without the use of harsh chemicals, and reduce costs associated with mold remediation and maintenance.
+
+The initial design plan included hardware and software design, with the hardware design comprising of the SDS011 sensor, the DHT22 sensor, and the Raspberry Pi. The software design included a class named MoldSensor that continuously reads temperature and humidity values from the DHT sensor and saves them to the data file every 10 seconds.
+
+However, the team encountered issues getting the Wi-Fi to work on their Pi and had to reinstall drivers since they had no Wi-Fi. For some reason our drivers uninstalled or stopped working, but with the help of Proffessor Wilborne, Garrett was able to resolve the issue and set up the final sensor for sensing dust. The project's final data design includes time, temperature measured in Celsius, and humidity levels measured in percentage.
+
+The project's data analysis revealed that the average humidity was 71.3%, which is above the threshold for mold growth, and the average temperature was 18.2 Celsius, within the range of spores' requirements. The average air quality was 99.07 μg/m3, indicating poor air quality. Using a graph, you may also observe a clear corelation in the data collected from each sensor. So humidity, air quality, and temperature all go up and down at the same time in the data we collected.
+
+I think, the project has significant potential to improve air quality and promote sustainability by detecting and preventing mold growth in an eco-friendly way. 
 
 ## Final Self-Evaluations
 
