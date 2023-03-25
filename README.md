@@ -62,7 +62,7 @@ start(self): Starts the Mold Sensor, continuously reading temperature and humidi
   - Temperature: the temperature is measured in Celsius 
   - Humidity: the humidity levels are measured in percentage 
 - Frequency of the Data: 
-   - the data is collected every 30 seconds
+   - the data is collected every 10 seconds
 
 ![image](https://user-images.githubusercontent.com/97661971/226230326-53a2b3df-9595-466c-8ff9-7202d12c663a.png)
 ### Diagram Images
@@ -95,6 +95,23 @@ start(self): Starts the Mold Sensor, continuously reading temperature and humidi
 6. Now, you have access to the data that the embedded system has collected over the period of time.
 7. Interpret data
 ## Data Analysis
+The following data is from 7 hours inside a vent in [A berea dorm]
+
+* Average Humidity: 71.3% (Mold grows usually at above 70%)
+* Average Temperature: 18.2 Celsius (Spores require 10-16 Celsius)
+* Average Air Quality: 99.07 μg/m3 (Especially poor air quality is 150 μg/m3)
+
+![image_720](https://user-images.githubusercontent.com/78548914/227698277-6f2ffdf5-6b34-43bc-9671-e6f454e2b445.png)
+
+**Sources:**
+An air quality reading of 99.07 μg/m3 for particulate matter is considered moderately unhealthy. The US Environmental Protection Agency (EPA) categorizes air quality readings for particulate matter into six levels: Good, Moderate, Unhealthy for Sensitive Groups, Unhealthy, Very Unhealthy, and Hazardous.
+"Particulate Matter (PM) Pollution" - EPA: https://www.epa.gov/pm-pollution/particulate-matter-pm-basics
+"Air Quality Index (AQI) Basics" - EPA: https://www.epa.gov/sites/production/files/2014-05/documents/zones.pdf
+
+"The optimal temperature range for most common indoor mold species is 25-30°C, but some molds can grow at temperatures as low as 0°C and as high as 60°C" (Centers for Disease Control and Prevention, https://www.cdc.gov/mold/faqs.htm)
+
+"Mold grows best in warm, damp, and humid conditions, typically between 68°F and 86°F (20°C and 30°C)" (United States Environmental Protection Agency, https://www.epa.gov/mold/mold-cleanup-your-home)
+
 
 ## Errors and Constraints
 * the sensors are not very accurate 
@@ -107,6 +124,10 @@ start(self): Starts the Mold Sensor, continuously reading temperature and humidi
 * https://pimylifeup.com/raspberry-pi-humidity-sensor-dht22/ : This is a base template for the humidity sensor.
 * ChatGPT
 * https://wiki.keyestudio.com/Ks0196_keyestudio_PM2.5_Shield : Code helped us understand the keyestudio sensor.
+* https://www.epa.gov/pm-pollution/particulate-matter-pm-basics : Shows the levels of air quality that are unhealthy, for μg/m3 of particulate matter.
+* https://www.epa.gov/sites/production/files/2014-05/documents/zones.pdf : Shows the EPA air quality ratings and what they mean.
+* https://www.cdc.gov/mold/faqs.htm) : Showed the conditions at which mold is most likely to form and cause air quality issues.
+* https://www.epa.gov/mold/mold-cleanup-your-home) : Also shows ideal mold growth conditions.
 
 ## Summary and Reflection
 
