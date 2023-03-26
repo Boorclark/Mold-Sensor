@@ -79,13 +79,12 @@ The following data is from 7 hours inside a vent in Anna Smith Residence Hall
 
 * Average Humidity: 71.3% (Mold grows usually at above 70%)
 * Average Temperature: 18.2 Celsius (Mold usually requires 25-30°C)
-* Average Air Quality: 99.07 μg/m3 (Especially poor air quality is 150 μg/m3)
+* Average Air Quality: 99.07 μg/m3 (Air quality over 35 μg/m3 can cause some)
 
 ![image_720](https://user-images.githubusercontent.com/78548914/227698277-6f2ffdf5-6b34-43bc-9671-e6f454e2b445.png)
 
 **Sources:**
-An air quality reading of 99.07 μg/m3 for particulate matter is considered moderately unhealthy. The US Environmental Protection Agency (EPA) categorizes air quality readings for particulate matter into six levels: Good, Moderate, Unhealthy for Sensitive Groups, Unhealthy, Very Unhealthy, and Hazardous.
-"Particulate Matter (PM) Pollution" - EPA: https://www.epa.gov/pm-pollution/particulate-matter-pm-basics
+National Ambient Air Standards are established to be protective of public health. The short-term standard (24-hour or daily average) is 35 micrograms per cubic meter of air (µg/m3) and the long-term standard (annual average) is 12 µg/m3.d https://www.indoorairhygiene.org/pm2-5-
 
 "The optimal temperature range for most common indoor mold species is 25-30°C, but some molds can grow at temperatures as low as 0°C and as high as 60°C" (Centers for Disease Control and Prevention, https://www.cdc.gov/mold/faqs.htm)
 
@@ -93,9 +92,9 @@ An air quality reading of 99.07 μg/m3 for particulate matter is considered mode
 
 ## Errors and Constraints
 * Callibration of sensors usually means that they are not exact measurements 
-* Detects the conditions in which mold should grow but does not directly detect the mold
+* Detects the conditions in which mold should grow but does not directly detect the mold 
 ## References
-* https://www.tomshardware.com/how-to/raspberry-pi-air-quality-monitor : Shows how to set up an air quality monitor and graph over time
+* https://www.tomshardware.com/how-to/raspberry-pi-air-quality-monitor : Shows how to set up an air quality monitor and graph over time 
 * https://www.piedmont.org/living-better/health-benefits-of-indoor-plants : we used this source to learn more about the benefits of keeping plants indoors as part of our planning stage. 
 * https://iotdesignpro.com/projects/iot-based-soil-moisture-monitoring-system-using-esp32 : example of how someone else created their soil moisture monitor that includes instructions on how to make our own with circuit diagram, video instructions, etc. 
 * https://quartzcomponents.com/blogs/electronics-projects/lpg-gas-leakage-detector-using-mq2-sensor-and-controller-using-sg90-servo-and-arduino : we used this to learn more about how we can create a gas leak detector. 
