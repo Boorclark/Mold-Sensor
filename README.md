@@ -86,7 +86,6 @@ The following data is from 7 hours inside a vent in Anna Smith Residence Hall
 **Sources:**
 An air quality reading of 99.07 μg/m3 for particulate matter is considered moderately unhealthy. The US Environmental Protection Agency (EPA) categorizes air quality readings for particulate matter into six levels: Good, Moderate, Unhealthy for Sensitive Groups, Unhealthy, Very Unhealthy, and Hazardous.
 "Particulate Matter (PM) Pollution" - EPA: https://www.epa.gov/pm-pollution/particulate-matter-pm-basics
-"Air Quality Index (AQI) Basics" - EPA: https://www.epa.gov/sites/production/files/2014-05/documents/zones.pdf
 
 "The optimal temperature range for most common indoor mold species is 25-30°C, but some molds can grow at temperatures as low as 0°C and as high as 60°C" (Centers for Disease Control and Prevention, https://www.cdc.gov/mold/faqs.htm)
 
