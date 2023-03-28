@@ -49,8 +49,10 @@ The project promotes economic sustainability by reducing the cost associated wit
 
 ![DHT22 Sensor](https://github.com/CSC300-Embedded-Systems/p02-project-2-silas-madina-garrett/blob/299e4b322f7ee57cb1add314cebee5af348ec9cc/images/DHT22.jpg)
 ![image](https://user-images.githubusercontent.com/97661971/226479600-67463cc4-c96d-43ab-b868-01494b819b9f.png)
-![image](https://user-images.githubusercontent.com/97661971/225777106-18c18982-5ed1-4415-bb9f-da50b6717dad.png)
-![image](https://user-images.githubusercontent.com/97661971/225777162-6f7f241d-e624-496d-91cf-e1115a9c1b09.png)
+![image](https://user-images.githubusercontent.com/97661971/228229928-bf354c7d-066b-4562-8b39-ff84f59e8da0.png)
+![image](https://user-images.githubusercontent.com/97661971/228230017-b37c5bed-4e45-47cd-95d3-380e2e95d38a.png)
+![image](https://user-images.githubusercontent.com/97661971/228230098-0819e5a1-efc4-4bf1-813a-abe8a38326e0.png)
+
 
 ## Files
 
