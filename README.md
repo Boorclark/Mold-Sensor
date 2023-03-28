@@ -81,7 +81,7 @@ The following data is from 7 hours inside a vent in Anna Smith Residence Hall
 
 * Average Humidity: 71.3% (Mold grows usually at above 70%)
 * Average Temperature: 18.2 Celsius (Mold usually requires 25-30°C)
-* Average Air Quality: 99.07 μg/m3 (Air quality over 35 μg/m3 can cause some)
+* Average Air Quality: 99.07 μg/m3 (Air quality over 35 μg/m3 is in bad condition)
 
 ![image_720](https://user-images.githubusercontent.com/78548914/227698277-6f2ffdf5-6b34-43bc-9671-e6f454e2b445.png)
 
