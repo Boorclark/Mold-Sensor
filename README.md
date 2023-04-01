@@ -1,9 +1,6 @@
 # P02: Air Quality/Humidity Sensor for Mold
 
 **Author(s)**: __*Garrett Clark, Silas Fair, Madinabonu Solijonova*__
-
-**Google Document**: __*https://docs.google.com/document/d/1vEkP05DatnfGtrbYecCQdyYocopVIO_u0U4QBJyAbHo/edit?usp=sharing*__
-
 ---
 ## Purpose
 **Air Quality/Humidity Sensor for Mold**: 
@@ -101,7 +98,6 @@ National Ambient Air Standards are established to be protective of public health
 * https://iotdesignpro.com/projects/iot-based-soil-moisture-monitoring-system-using-esp32 : example of how someone else created their soil moisture monitor that includes instructions on how to make our own with circuit diagram, video instructions, etc. 
 * https://quartzcomponents.com/blogs/electronics-projects/lpg-gas-leakage-detector-using-mq2-sensor-and-controller-using-sg90-servo-and-arduino : we used this to learn more about how we can create a gas leak detector. 
 * https://pimylifeup.com/raspberry-pi-humidity-sensor-dht22/ : This is a base template for the humidity sensor.
-* ChatGPT
 * https://wiki.keyestudio.com/Ks0196_keyestudio_PM2.5_Shield : Code helped us understand the keyestudio sensor.
 * https://www.epa.gov/pm-pollution/particulate-matter-pm-basics : Shows the levels of air quality that are unhealthy, for μg/m3 of particulate matter.
 * https://www.epa.gov/sites/production/files/2014-05/documents/zones.pdf : Shows the EPA air quality ratings and what they mean.
@@ -118,24 +114,3 @@ However, the team encountered issues getting the Wi-Fi to work on their Pi and h
 The project's data analysis revealed that the average humidity was 71.3%, which is above the threshold for mold growth, and the average temperature was 18.2 Celsius, within the range of spores' requirements, however, less than usual temperature required for mold growth. The average air quality was 99.07 μg/m3, indicating poor air quality. Using a graph, you may also observe a clear corelation in the data collected from each sensor. So humidity, air quality, and temperature all go up and down at the same time in the data we collected.
 
 I think, the project has significant potential to improve air quality and promote sustainability by detecting and preventing mold growth in an eco-friendly way. 
-
-## Final Self-Evaluations
-### Ideation, Brainstorming, Design:
-* *Garrett: 2*
-* *Madina: 6*
-* *Silas: 2*
-
-### Code creation:
-* *Garrett: 6*
-* *Madina: 2*
-* *Silas: 2*
-
-### Documentation creation:
-* *Garrett: 2*
-* *Madina: 2*
-* *Silas: 6*
-
-### Teamwork & Participation:
-* *Garrett: 3.33*
-* *Madina: 3.33*
-* *Silas: 3.33*
