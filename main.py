@@ -1,23 +1,68 @@
 import os
 import time
+import csv
 import Adafruit_DHT
+import RPi.GPIO as GPIO
+import Adafruit_ADS1x15
 
-DHT_SENSOR = Adafruit_DHT.DHT22
-DHT_PIN = 4
+class MoldSensor:
+    def __init__(self):
+        # DHT sensor settings
+        self.DHT_SENSOR = Adafruit_DHT.DHT22
+        self.DHT_PIN = 13 
+        
+        # Dust sensor settings
+        self.DUST_PIN = 21 
+        self.SENSITIVITY = 170 # 'SENSITIVITY' and 'OFFSET' values taken from:
+        self.OFFSET = 0.1      # https://wiki.keyestudio.com/Ks0196_keyestudio_PM2.5_Shield
+        GPIO.setmode(GPIO.BCM)
+        GPIO.setup(self.DUST_PIN, GPIO.IN)
+        
+        # ADC settings
+        self.ADC_PIN = 3
+        self.GAIN = 1 
+        self.adc = Adafruit_ADS1x15.ADS1115()   
+        self.MAX_VAL_ADC = 32767.0 # Max value obtained from a 16-bit ADC
+        self.MAX_VOL_RANGE = 4.096 # Max voltage range from a ADC
+        
+        # File settings
+        self.filename = "data.csv"
 
-try:
-    f = open('/home/pi/humidity.csv', 'a+')
-    if os.stat('/home/pi/humidity.csv').st_size == 0:
-            f.write('Date,Time,Temperature,Humidity\r\n')
-except:
-    pass
+    def start(self):
+        # Create a new "Data" folder if it doesn't exist
+        if not os.path.exists("Data"):
+            os.makedirs("Data")
 
-while True:
-    humidity, temperature = Adafruit_DHT.read_retry(DHT_SENSOR, DHT_PIN)
+        # Generate a unique file name with current time
+        current_time = time.strftime("%m-%d-%Y_%H:%M:%S", time.localtime())
+        file_name = "Data/data_{}.csv".format(current_time)
 
-    if humidity is not None and temperature is not None:
-        f.write('{0},{1},{2:0.1f}*C,{3:0.1f}%\r\n'.format(time.strftime('%m/%d/%y'), time.strftime('%H:%M'), temperature, humidity))
-    else:
-        print("Failed to retrieve data from humidity sensor")
+        while True:
+            # Update the current time
+            current_time = time.strftime("%m-%d-%Y_%H:%M:%S", time.localtime())
+            
+            # Read temperature and humidity from DHT sensor
+            humidity, temperature = Adafruit_DHT.read_retry(self.DHT_SENSOR, self.DHT_PIN)
 
-    time.sleep(30)
+            # Convert the raw ADC reading to voltage
+            voltage = self.adc.read_adc(self.ADC_PIN, gain=self.GAIN) / self.MAX_VAL_ADC * self.MAX_VOL_RANGE
+            
+            # Convert the voltage to particulate matter concentration in μg/m³ 
+            airQuality = self.SENSITIVITY * voltage - self.OFFSET   
+
+            # Open the CSV file in append mode
+            with open(file_name, mode='a+', newline='') as data_file:
+                data_writer = csv.writer(data_file)
+                
+                # Write header row only if the file is newly created
+                if data_file.tell() == 0:
+                    data_writer.writerow(["Time", "Temperature(c)", "Humidity(%)", "Air Quality(μg/m3)"])
+
+                # Write data collected to a row in the CSV
+                data_writer.writerow(['{0}'.format(current_time), '{0:0.1f}'.format(temperature), '{0:0.1f}'.format(humidity), '{0}'.format(airQuality)])
+            time.sleep(10)
+
+
+if __name__ == "__main__":
+    ms = MoldSensor()
+    ms.start()
